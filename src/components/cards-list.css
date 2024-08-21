@@ -1,0 +1,49 @@
+.cards-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: end;
+
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1600px;
+
+  padding: 8px 16px;
+}
+
+.like-filter-button {
+  background-color: #D3D3D3;
+  border-radius: 4px;
+  padding: 10px;
+
+  transition: background-color .3s;
+}
+
+.like-filter-button:hover {
+  background-color: #A9A9A9;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 150px);
+  gap: 48px;
+  
+  max-width: 1600px;
+  width: 100%;
+  padding: 32px;
+  margin: 0 auto;
+
+  border-radius: 8px;
+
+  background-color: #ececec;
+
+}
+
+.cards-container-empty {
+  text-align: center;
+  grid-column: 1 / -1;
+}
